@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>四大家族</title>
+<style type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	width:118px;
+	height:115px;
+	z-index:1;
+}
+#Layer2 {
+	position:absolute;
+	width:150px;
+	height:40px;
+	z-index:2;
+	left: 320px;
+	top: 475px;
+}
+#Layer3 {
+	position:absolute;
+	width:150px;
+	height:40px;
+	z-index:3;
+	left: 318px;
+	top: 547px;
+}
+#Layer4 {
+	position:absolute;
+	width:83px;
+	height:115px;
+	z-index:4;
+}
+#Layer5 {
+	position:absolute;
+	width:500px;
+	height:350px;
+	z-index:5;
+	left: 495px;
+	top: 426px;
+	visibility: visible;
+}
+#Layer6 {
+	position:absolute;
+	width:530px;
+	height:346px;
+	z-index:6;
+	left: 488px;
+	top: 417px;
+	visibility: hidden;
+}
+#Layer7 {
+	position:absolute;
+	width:560px;
+	height:529px;
+	z-index:7;
+	left: 485px;
+	top: 338px;
+	visibility: hidden;
+}
+#Layer8 {
+	position:absolute;
+	width:632px;
+	height:413px;
+	z-index:1;
+	left: 269px;
+	top: 358px;
+}
+#Layer9 {
+	position:absolute;
+	width:619px;
+	height:374px;
+	z-index:1;
+	left: 103px;
+	top: -334px;
+	visibility: visible;
+	overflow: hidden;
+	background-color: #999999;
+}
+#Layer10 {
+	position:absolute;
+	width:586px;
+	height:447px;
+	z-index:2;
+	left: -18px;
+	top: -20px;
+	overflow: hidden;
+}
+#Layer11 {
+	position:absolute;
+	width:572px;
+	height:324px;
+	z-index:1;
+	left: 8px;
+	top: -310px;
+}
+#Layer12 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+}
+#Layer13 {
+	position:absolute;
+	width:618px;
+	height:462px;
+	z-index:1;
+	left: 82px;
+	top: 35px;
+	overflow: hidden;
+	background-color: #CC6600;
+}
+#Layer14 {
+	position:absolute;
+	width:599px;
+	height:452px;
+	z-index:1;
+	left: 21px;
+	top: 479px;
+	overflow: hidden;
+}
+.STYLE4 {
+	font-family: "新宋体";
+	font-size: 36px;
+}
+-->
+</style>
+<script type="text/JavaScript">
+<!--
+function MM_timelineGoto(tmLnName, fNew, numGotos) { //v2.0
+  //Copyright 1998, 1999, 2000, 2001, 2002, 2003, 2004 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,lastKeyFr,propNum,theObj;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (numGotos != null)
+    if (tmLn.gotoCount == null) tmLn.gotoCount = 1;
+    else if (tmLn.gotoCount++ >= numGotos) {tmLn.gotoCount=0; return}
+  jmpFwd = (fNew > tmLn.curFrame);
+  for (i = 0; i < tmLn.length; i++) {
+    sprite = (jmpFwd)? tmLn[i] : tmLn[(tmLn.length-1)-i]; //count bkwds if jumping back
+    if (sprite.charAt(0) == "s") {
+      numKeyFr = sprite.keyFrames.length;
+      firstKeyFr = sprite.keyFrames[0];
+      lastKeyFr = sprite.keyFrames[numKeyFr - 1];
+      if ((jmpFwd && fNew<firstKeyFr) || (!jmpFwd && lastKeyFr<fNew)) continue; //skip if untouchd
+      for (keyFrm=1; keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]; keyFrm++);
+      for (j=0; j<sprite.values.length; j++) {
+        props = sprite.values[j];
+        if (numKeyFr == props.length) propNum = keyFrm-1 //keyframes only
+        else propNum = Math.min(Math.max(0,fNew-firstKeyFr),props.length-1); //or keep in legal range
+        if (sprite.obj != null) {
+          if (props.prop2 == null) sprite.obj[props.prop] = props[propNum];
+          else        sprite.obj[props.prop2][props.prop] = props[propNum];
+      } }
+    } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+  }
+  tmLn.curFrame = fNew;
+  if (tmLn.ID == 0) eval('MM_timelinePlay(tmLnName)');
+}
+
+function MM_timelinePlay(tmLnName, myID) { //v1.2
+  //Copyright 1998, 1999, 2000, 2001, 2002, 2003, 2004 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,propNum,theObj,firstTime=false;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (myID == null) { myID = ++tmLn.ID; firstTime=true;}//if new call, incr ID
+  if (myID == tmLn.ID) { //if Im newest
+    setTimeout('MM_timelinePlay("'+tmLnName+'",'+myID+')',tmLn.delay);
+    fNew = ++tmLn.curFrame;
+    for (i=0; i<tmLn.length; i++) {
+      sprite = tmLn[i];
+      if (sprite.charAt(0) == 's') {
+        if (sprite.obj) {
+          numKeyFr = sprite.keyFrames.length; firstKeyFr = sprite.keyFrames[0];
+          if (fNew >= firstKeyFr && fNew <= sprite.keyFrames[numKeyFr-1]) {//in range
+            keyFrm=1;
+            for (j=0; j<sprite.values.length; j++) {
+              props = sprite.values[j]; 
+              if (numKeyFr != props.length) {
+                if (props.prop2 == null) sprite.obj[props.prop] = props[fNew-firstKeyFr];
+                else        sprite.obj[props.prop2][props.prop] = props[fNew-firstKeyFr];
+              } else {
+                while (keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]) keyFrm++;
+                if (firstTime || fNew==sprite.keyFrames[keyFrm-1]) {
+                  if (props.prop2 == null) sprite.obj[props.prop] = props[keyFrm-1];
+                  else        sprite.obj[props.prop2][props.prop] = props[keyFrm-1];
+        } } } } }
+      } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+      if (fNew > tmLn.lastFrame) tmLn.ID = 0;
+  } }
+}
+
+function MM_initTimelines() { //v4.0
+    //MM_initTimelines() Copyright 1997 Macromedia, Inc. All rights reserved.
+    var ns = navigator.appName == "Netscape";
+    var ns4 = (ns && parseInt(navigator.appVersion) == 4);
+    var ns5 = (ns && parseInt(navigator.appVersion) > 4);
+    var macIE5 = (navigator.platform ? (navigator.platform == "MacPPC") : false) && (navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4);
+    document.MM_Time = new Array(1);
+    document.MM_Time[0] = new Array(2);
+    document.MM_Time["Timeline1"] = document.MM_Time[0];
+    document.MM_Time[0].MM_Name = "Timeline1";
+    document.MM_Time[0].fps = 5;
+    document.MM_Time[0][0] = new String("sprite");
+    document.MM_Time[0][0].slot = 1;
+    if (ns4)
+        document.MM_Time[0][0].obj = document["Layer12"] ? document["Layer12"].document["Layer13"].document["Layer14"] : document["Layer13"].document["Layer14"];
+    else if (ns5)
+        document.MM_Time[0][0].obj = document.getElementById("Layer14");
+    else
+        document.MM_Time[0][0].obj = document.all ? document.all["Layer14"] : null;
+    document.MM_Time[0][0].keyFrames = new Array(1, 2, 3, 4, 5, 6, 35);
+    document.MM_Time[0][0].values = new Array(2);
+    if (ns5 || macIE5)
+        document.MM_Time[0][0].values[0] = new Array("20px", "21px", "19px", "18px", "18px", "17px", "17px", "17px", "17px", "17px", "17px", "16px", "16px", "16px", "16px", "16px", "16px", "16px", "16px", "16px", "16px", "15px", "15px", "15px", "15px", "15px", "15px", "15px", "15px", "15px", "14px", "14px", "14px", "14px", "14px");
+    else
+        document.MM_Time[0][0].values[0] = new Array(20,21,19,18,18,17,17,17,17,17,17,16,16,16,16,16,16,16,16,16,16,15,15,15,15,15,15,15,15,15,14,14,14,14,14);
+    document.MM_Time[0][0].values[0].prop = "left";
+    if (ns5 || macIE5)
+        document.MM_Time[0][0].values[1] = new Array("479px", "473px", "467px", "465px", "464px", "463px", "444px", "425px", "405px", "384px", "362px", "340px", "317px", "293px", "268px", "243px", "216px", "189px", "160px", "131px", "101px", "69px", "37px", "5px", "-27px", "-60px", "-92px", "-124px", "-156px", "-188px", "-220px", "-253px", "-285px", "-317px", "-349px");
+    else
+        document.MM_Time[0][0].values[1] = new Array(479,473,467,465,464,463,444,425,405,384,362,340,317,293,268,243,216,189,160,131,101,69,37,5,-27,-60,-92,-124,-156,-188,-220,-253,-285,-317,-349);
+    document.MM_Time[0][0].values[1].prop = "top";
+    if (!ns4) {
+        document.MM_Time[0][0].values[0].prop2 = "style";
+        document.MM_Time[0][0].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][1] = new String("behavior");
+    document.MM_Time[0][1].frame = 36;
+    document.MM_Time[0][1].value = "MM_timelineGoto('Timeline1','1')";
+    document.MM_Time[0].lastFrame = 36;
+    for (i=0; i<document.MM_Time.length; i++) {
+        document.MM_Time[i].ID = null;
+        document.MM_Time[i].curFrame = 0;
+        document.MM_Time[i].delay = 1000/document.MM_Time[i].fps;
+    }
+}
+//-->
+</script>
+</head>
+
+<body onload="MM_timelinePlay('Timeline1')">
+<table width="760" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="images/贾府.jpg" width="760" height="300" /></td>
+  </tr>
+</table>
+<table width="760" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td></td>
+  </tr>
+</table>
+<table width="760" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#990000">
+  <tr>
+    <td height="224"><table width="760" border="1" cellpadding="0" cellspacing="0" bordercolor="#993300">
+      <tr>
+        <td width="171" height="531" valign="top"><div id="Layer12">
+          <div id="Layer13">
+            <div id="Layer14" style="top: 479px; left: 20px;">
+              <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td><span class="STYLE4">贾 史 王 薛</span> </td>
+                </tr>
+              </table>
+              <p>&nbsp;</p>
+              <table width="498" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="498"><p>红楼梦中的四大家族（贾史王薛）是指以贾府为首的一个封建官僚集团。他们势力庞大，都名列当时的“护官府”之中。这四家皆连络有亲，一损皆损，一荣皆荣，扶持遮饰，俱有照应的。正因如此，才有“贾不假，白玉为堂金作马。阿房宫，三百里，住不下金陵一个史。东海缺少白玉床，龙王来请金陵王。丰年好大雪，珍珠如土金如铁。”</p>
+                    <p>贾氏代表人物</p>
+                    <p>　　贾政、贾宝玉、贾元春、贾探春、贾惜春、贾珍、贾琏、贾赦、等；</p>
+                    <p>史氏代表人物</p>
+                    <p>　　贾母、史湘云等；</p>
+                    <p>王氏代表人物</p>
+                    <p>　　王熙凤、王夫人、薛姨妈等；</p>
+                    <p>薛氏代表人物</p>
+                    <p>　　薛宝钗、薛蟠、薛宝琴、薛蝌等。</p></td>
+                </tr>
+              </table>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+        </div></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>
